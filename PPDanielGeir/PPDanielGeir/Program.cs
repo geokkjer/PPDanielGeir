@@ -10,24 +10,10 @@
     Kjekt å se hvor man kan kjøpe billig mat og dyre designer klær, hehe ;)*/
     using PPDanielGeir;
     var shops =  new List<Shop>();
-    while (true)
-    {
-        Console.Clear();
-        Console.WriteLine("Welcome to Daniel & Geir's list of shops !");
-        Console.WriteLine("------------------------------------------");
-        Console.WriteLine("1.) Vis alle butikkene");
-        Console.WriteLine("2.) Legg til ny butikk");
-        Console.WriteLine("X.) Avslutt");
-        Console.WriteLine("------------------------------------------");
-        var input  = Console.ReadLine();
-        switch (input)
-        {
-            case "1":
-                break;
-            case "2":
-                break;
-            case "X":
-                System.Environment.Exit(0);
-                break;
-        }
-    }
+    shops.Add(new Shop("Kiwi", "food", 2 ));
+    shops.Add(new Shop("Meny", "food", 3 ));
+    shops.Add(new Shop("Elkjøp", "Electronics", 3 ));
+    shops.Add(new Shop("Power", "Electronics", 2 ));
+   
+   var meny = new MainMeny();
+   meny.Meny();

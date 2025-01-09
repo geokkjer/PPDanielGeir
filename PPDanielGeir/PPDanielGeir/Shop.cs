@@ -12,4 +12,16 @@ public class Shop
         Speciality = speciality;
         PriceLevel = priceLevel;
     }
+
+
+
+    public void PrintShop()
+    {
+        Console.WriteLine($"Shop Name: {ShopName} Speciality: {Speciality} Price: {PriceLevel}");
+    }
+    
 }
+
+
+
+
