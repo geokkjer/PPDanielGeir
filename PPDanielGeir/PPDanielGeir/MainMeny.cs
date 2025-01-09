@@ -2,7 +2,7 @@ namespace PPDanielGeir;
 
 public class MainMeny
 {
-    public void Meny(List<Shop>shops)
+    public void Meny(List<Shop> shops)
     {
         
         while (true)
@@ -28,16 +28,16 @@ public class MainMeny
                     Console.ReadLine();
                     break;
                 case "2":
+                    Addshop.ShopAdder(shops);
                     break;
                 case "X": 
+                    System.Environment.Exit(0);
+                    break;
+                case "":
                     System.Environment.Exit(0);
                     break;
             }
         } 
     }
 
-            
-    
-    
-    
 }
