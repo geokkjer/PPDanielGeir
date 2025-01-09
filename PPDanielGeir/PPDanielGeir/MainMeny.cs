@@ -2,8 +2,9 @@ namespace PPDanielGeir;
 
 public class MainMeny
 {
-    public void Meny()
+    public void Meny(List<Shop>shops)
     {
+        
         while (true)
         {
             Console.Clear();
@@ -17,7 +18,14 @@ public class MainMeny
             switch (input)
             {
                 case "1":
-                    ShowAllShops.ShowAll(shops);
+                    Console.Clear();
+                    foreach (Shop shop in shops)
+                    {
+                        shop.PrintShop();
+                        
+                    }
+                    Console.WriteLine("Trykk en tast for å komme tilbake til menyen.");
+                    Console.ReadLine();
                     break;
                 case "2":
                     break;
@@ -27,8 +35,8 @@ public class MainMeny
             }
         } 
     }
-    
-    
+
+            
     
     
     

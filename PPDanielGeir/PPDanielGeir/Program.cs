@@ -16,4 +16,4 @@
     shops.Add(new Shop("Power", "Electronics", 2 ));
    
    var meny = new MainMeny();
-   meny.Meny();
+   meny.Meny(shops);
